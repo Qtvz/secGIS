@@ -21,6 +21,7 @@ using ESRI.ArcGIS.Geodatabase;
 using ESRI.ArcGIS.DataSourcesRaster;
 using stdole;
 using ESRI.ArcGIS.SpatialAnalyst;
+using System.Media;
 
 namespace VioGIS
 {
@@ -49,12 +50,16 @@ namespace VioGIS
             InitializeComponent();
         }
 
+        string str1 = System.IO.Directory.GetCurrentDirectory();
+        System.Media.SoundPlayer sp = new SoundPlayer();
         private void Form1_Load(object sender, EventArgs e)
         {           
             this.WindowState = FormWindowState.Maximized;
             axTOCControl1.SetBuddyControl(axMapControl1);
             axToolbarControl1.SetBuddyControl(axMapControl1);
             axToolbarControl1.AddItem(new GeoMapComm(),-1,-1,false,0,esriCommandStyles.esriCommandStyleIconOnly);
+            sp.SoundLocation = str1 + @"\bgm\Canon.wav";
+            sp.PlayLooping();
             loadMapDoc();
         }
 
@@ -1550,7 +1555,34 @@ namespace VioGIS
                 loadMapDoc();
             }
         }
-                
+
+        private void NoneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            noneToolStripMenuItem.Checked = true;
+            cannonToolStripMenuItem.Checked = false;
+            mINUETInGToolStripMenuItem.Checked = false;
+            sp.Stop();
+        }
+
+        private void CannonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sp.Stop();
+            noneToolStripMenuItem.Checked = false;
+            cannonToolStripMenuItem.Checked = true;
+            mINUETInGToolStripMenuItem.Checked = false;
+            sp.SoundLocation = str1 + @"\bgm\Canon.wav";
+            sp.PlayLooping();
+        }
+
+        private void MINUETInGToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sp.Stop();
+            noneToolStripMenuItem.Checked = false;
+            cannonToolStripMenuItem.Checked = false;
+            mINUETInGToolStripMenuItem.Checked = true;
+            sp.SoundLocation = str1 + @"\bgm\MINUET in G.wav";
+            sp.PlayLooping();
+        }
     }
 
     //pageLayeout与map联动

@@ -85,6 +85,9 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.axToolbarControl1 = new ESRI.ArcGIS.Controls.AxToolbarControl();
             this.sSb = new System.Windows.Forms.StatusStrip();
+            this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.mINUETInGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cannonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tSslL = new System.Windows.Forms.ToolStripStatusLabel();
             this.tSxy = new System.Windows.Forms.ToolStripStatusLabel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -100,6 +103,7 @@
             this.aMctms = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.miMap1 = new System.Windows.Forms.ToolStripMenuItem();
             this.miPageLayout1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.noneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -579,25 +583,53 @@
             // 
             this.sSb.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.sSb.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownButton1,
             this.tSslL,
             this.tSxy});
-            this.sSb.Location = new System.Drawing.Point(0, 896);
+            this.sSb.Location = new System.Drawing.Point(0, 895);
             this.sSb.Name = "sSb";
             this.sSb.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.sSb.Size = new System.Drawing.Size(1280, 25);
+            this.sSb.Size = new System.Drawing.Size(1280, 26);
             this.sSb.TabIndex = 2;
             this.sSb.Text = "statusStrip1";
+            // 
+            // toolStripDropDownButton1
+            // 
+            this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mINUETInGToolStripMenuItem,
+            this.cannonToolStripMenuItem,
+            this.noneToolStripMenuItem});
+            this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
+            this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(34, 24);
+            this.toolStripDropDownButton1.Text = "toolStripDropDownButton1";
+            // 
+            // mINUETInGToolStripMenuItem
+            // 
+            this.mINUETInGToolStripMenuItem.Name = "mINUETInGToolStripMenuItem";
+            this.mINUETInGToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.mINUETInGToolStripMenuItem.Text = "MINUET in G";
+            this.mINUETInGToolStripMenuItem.Click += new System.EventHandler(this.MINUETInGToolStripMenuItem_Click);
+            // 
+            // cannonToolStripMenuItem
+            // 
+            this.cannonToolStripMenuItem.Name = "cannonToolStripMenuItem";
+            this.cannonToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.cannonToolStripMenuItem.Text = "Canon";
+            this.cannonToolStripMenuItem.Click += new System.EventHandler(this.CannonToolStripMenuItem_Click);
             // 
             // tSslL
             // 
             this.tSslL.Name = "tSslL";
-            this.tSslL.Size = new System.Drawing.Size(84, 20);
+            this.tSslL.Size = new System.Drawing.Size(84, 21);
             this.tSslL.Text = "状态：就绪";
             // 
             // tSxy
             // 
             this.tSxy.Name = "tSxy";
-            this.tSxy.Size = new System.Drawing.Size(0, 20);
+            this.tSxy.Size = new System.Drawing.Size(0, 21);
             // 
             // splitContainer1
             // 
@@ -615,7 +647,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.axLicenseControl1);
             this.splitContainer1.Panel2.Controls.Add(this.axMapControl1);
             this.splitContainer1.Panel2.Controls.Add(this.axPageLayoutControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(1280, 768);
+            this.splitContainer1.Size = new System.Drawing.Size(1280, 767);
             this.splitContainer1.SplitterDistance = 425;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 3;
@@ -635,8 +667,8 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.axMapControl2);
-            this.splitContainer2.Size = new System.Drawing.Size(425, 768);
-            this.splitContainer2.SplitterDistance = 323;
+            this.splitContainer2.Size = new System.Drawing.Size(425, 767);
+            this.splitContainer2.SplitterDistance = 322;
             this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -648,7 +680,7 @@
             this.axTOCControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axTOCControl1.Name = "axTOCControl1";
             this.axTOCControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axTOCControl1.OcxState")));
-            this.axTOCControl1.Size = new System.Drawing.Size(425, 323);
+            this.axTOCControl1.Size = new System.Drawing.Size(425, 322);
             this.axTOCControl1.TabIndex = 0;
             this.axTOCControl1.OnMouseDown += new ESRI.ArcGIS.Controls.ITOCControlEvents_Ax_OnMouseDownEventHandler(this.axTOCControl1_OnMouseDown);
             this.axTOCControl1.OnMouseUp += new ESRI.ArcGIS.Controls.ITOCControlEvents_Ax_OnMouseUpEventHandler(this.axTOCControl1_OnMouseUp);
@@ -705,7 +737,7 @@
             this.axMapControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axMapControl1.Name = "axMapControl1";
             this.axMapControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axMapControl1.OcxState")));
-            this.axMapControl1.Size = new System.Drawing.Size(850, 768);
+            this.axMapControl1.Size = new System.Drawing.Size(850, 767);
             this.axMapControl1.TabIndex = 0;
             this.axMapControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseDownEventHandler(this.axMapControl1_OnMouseDown);
             this.axMapControl1.OnMouseMove += new ESRI.ArcGIS.Controls.IMapControlEvents2_Ax_OnMouseMoveEventHandler(this.axMapControl1_OnMouseMove);
@@ -722,7 +754,7 @@
             this.axPageLayoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.axPageLayoutControl1.Name = "axPageLayoutControl1";
             this.axPageLayoutControl1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axPageLayoutControl1.OcxState")));
-            this.axPageLayoutControl1.Size = new System.Drawing.Size(850, 768);
+            this.axPageLayoutControl1.Size = new System.Drawing.Size(850, 767);
             this.axPageLayoutControl1.TabIndex = 2;
             this.axPageLayoutControl1.OnMouseDown += new ESRI.ArcGIS.Controls.IPageLayoutControlEvents_Ax_OnMouseDownEventHandler(this.axPageLayoutControl1_OnMouseDown);
             // 
@@ -750,6 +782,13 @@
             this.miPageLayout1.Size = new System.Drawing.Size(138, 26);
             this.miPageLayout1.Text = "布局视图";
             this.miPageLayout1.Click += new System.EventHandler(this.布局视图ToolStripMenuItem_Click);
+            // 
+            // noneToolStripMenuItem
+            // 
+            this.noneToolStripMenuItem.Name = "noneToolStripMenuItem";
+            this.noneToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.noneToolStripMenuItem.Text = "None";
+            this.noneToolStripMenuItem.Click += new System.EventHandler(this.NoneToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -872,6 +911,10 @@
         private System.Windows.Forms.ToolStripMenuItem EndEdit;
         private System.Windows.Forms.ToolStripMenuItem 保存编辑ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 快捷键设计FToolStripMenuItem;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
+        private System.Windows.Forms.ToolStripMenuItem mINUETInGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cannonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem noneToolStripMenuItem;
     }
 }
 
