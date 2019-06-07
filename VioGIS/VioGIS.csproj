@@ -75,7 +75,8 @@
     <ApplicationIcon>GISpp.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Calling">
+    <Reference Include="Calling, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Calling\bin\Debug\netstandard2.0\Calling.dll</HintPath>
     </Reference>
     <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.2.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86">
