@@ -59,7 +59,7 @@ namespace VioGIS
             axTOCControl1.SetBuddyControl(axMapControl1);
             axToolbarControl1.SetBuddyControl(axMapControl1);
             axToolbarControl1.AddItem(new GeoMapComm(),-1,-1,false,0,esriCommandStyles.esriCommandStyleIconOnly);
-            sp.SoundLocation = str1 + @"\bgm\Canon.wav";
+            sp.SoundLocation = str1 + @"\bgm\Time is a Place.wav";
             sp.PlayLooping();
             loadMapDoc();
         }
@@ -1560,26 +1560,16 @@ namespace VioGIS
         private void NoneToolStripMenuItem_Click(object sender, EventArgs e)
         {
             noneToolStripMenuItem.Checked = true;
-            cannonToolStripMenuItem.Checked = false;
+            tipToolStripMenuItem.Checked = false;
             mINUETInGToolStripMenuItem.Checked = false;
             sp.Stop();
-        }
-
-        private void CannonToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            sp.Stop();
-            noneToolStripMenuItem.Checked = false;
-            cannonToolStripMenuItem.Checked = true;
-            mINUETInGToolStripMenuItem.Checked = false;
-            sp.SoundLocation = str1 + @"\bgm\Canon.wav";
-            sp.PlayLooping();
         }
 
         private void MINUETInGToolStripMenuItem_Click(object sender, EventArgs e)
         {
             sp.Stop();
             noneToolStripMenuItem.Checked = false;
-            cannonToolStripMenuItem.Checked = false;
+            tipToolStripMenuItem.Checked = false;
             mINUETInGToolStripMenuItem.Checked = true;
             sp.SoundLocation = str1 + @"\bgm\MINUET in G.wav";
             sp.PlayLooping();
@@ -1587,7 +1577,17 @@ namespace VioGIS
 
         private void StePToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void tipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            sp.Stop();
+            noneToolStripMenuItem.Checked = false;
+            tipToolStripMenuItem.Checked = true;
+            mINUETInGToolStripMenuItem.Checked = false;
+            sp.SoundLocation = str1 + @"\bgm\Time is a Place.wav";
+            sp.PlayLooping();
         }
     }
 

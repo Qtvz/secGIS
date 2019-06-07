@@ -87,7 +87,7 @@
             this.sSb = new System.Windows.Forms.StatusStrip();
             this.toolStripDropDownButton1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.mINUETInGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cannonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.noneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tSslL = new System.Windows.Forms.ToolStripStatusLabel();
             this.tSxy = new System.Windows.Forms.ToolStripStatusLabel();
@@ -602,7 +602,7 @@
             this.toolStripDropDownButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mINUETInGToolStripMenuItem,
-            this.cannonToolStripMenuItem,
+            this.tipToolStripMenuItem,
             this.noneToolStripMenuItem});
             this.toolStripDropDownButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton1.Image")));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -613,21 +613,21 @@
             // mINUETInGToolStripMenuItem
             // 
             this.mINUETInGToolStripMenuItem.Name = "mINUETInGToolStripMenuItem";
-            this.mINUETInGToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
+            this.mINUETInGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.mINUETInGToolStripMenuItem.Text = "MINUET in G";
             this.mINUETInGToolStripMenuItem.Click += new System.EventHandler(this.MINUETInGToolStripMenuItem_Click);
             // 
-            // cannonToolStripMenuItem
+            // tipToolStripMenuItem
             // 
-            this.cannonToolStripMenuItem.Name = "cannonToolStripMenuItem";
-            this.cannonToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
-            this.cannonToolStripMenuItem.Text = "Canon";
-            this.cannonToolStripMenuItem.Click += new System.EventHandler(this.CannonToolStripMenuItem_Click);
+            this.tipToolStripMenuItem.Name = "tipToolStripMenuItem";
+            this.tipToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tipToolStripMenuItem.Text = "Time is a place";
+            this.tipToolStripMenuItem.Click += new System.EventHandler(this.tipToolStripMenuItem_Click);
             // 
             // noneToolStripMenuItem
             // 
             this.noneToolStripMenuItem.Name = "noneToolStripMenuItem";
-            this.noneToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
+            this.noneToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.noneToolStripMenuItem.Text = "None";
             this.noneToolStripMenuItem.Click += new System.EventHandler(this.NoneToolStripMenuItem_Click);
             // 
@@ -929,7 +929,7 @@
         private System.Windows.Forms.ToolStripMenuItem 快捷键设计FToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton1;
         private System.Windows.Forms.ToolStripMenuItem mINUETInGToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cannonToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tipToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem noneToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem stePToolStripMenuItem;
