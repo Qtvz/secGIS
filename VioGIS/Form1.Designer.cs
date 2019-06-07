@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +60,8 @@
             this.miSpatilFilter = new System.Windows.Forms.ToolStripMenuItem();
             this.miBuffer = new System.Windows.Forms.ToolStripMenuItem();
             this.miStatistic = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.stePToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GeoShow = new System.Windows.Forms.ToolStripMenuItem();
             this.拉伸渲染ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.分级渲染ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,18 +95,16 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.axTOCControl1 = new ESRI.ArcGIS.Controls.AxTOCControl();
-            this.cmTOC = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.cmTOC = new System.Windows.Forms.ContextMenuStrip();
             this.btnDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.pOpenTable = new System.Windows.Forms.ToolStripMenuItem();
             this.axMapControl2 = new ESRI.ArcGIS.Controls.AxMapControl();
             this.axLicenseControl1 = new ESRI.ArcGIS.Controls.AxLicenseControl();
             this.axMapControl1 = new ESRI.ArcGIS.Controls.AxMapControl();
             this.axPageLayoutControl1 = new ESRI.ArcGIS.Controls.AxPageLayoutControl();
-            this.aMctms = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.aMctms = new System.Windows.Forms.ContextMenuStrip();
             this.miMap1 = new System.Windows.Forms.ToolStripMenuItem();
             this.miPageLayout1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.stePToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -267,7 +266,7 @@
             // 开始编辑ToolStripMenuItem
             // 
             this.开始编辑ToolStripMenuItem.Name = "开始编辑ToolStripMenuItem";
-            this.开始编辑ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.开始编辑ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.开始编辑ToolStripMenuItem.Text = "开始编辑(&S)";
             this.开始编辑ToolStripMenuItem.Click += new System.EventHandler(this.开始编辑ToolStripMenuItem_Click);
             // 
@@ -275,14 +274,14 @@
             // 
             this.EndEdit.Enabled = false;
             this.EndEdit.Name = "EndEdit";
-            this.EndEdit.Size = new System.Drawing.Size(224, 26);
+            this.EndEdit.Size = new System.Drawing.Size(174, 26);
             this.EndEdit.Text = "结束编辑(&E)";
             this.EndEdit.Click += new System.EventHandler(this.EndEdit_Click);
             // 
             // 保存编辑ToolStripMenuItem
             // 
             this.保存编辑ToolStripMenuItem.Name = "保存编辑ToolStripMenuItem";
-            this.保存编辑ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.保存编辑ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
             this.保存编辑ToolStripMenuItem.Text = "保存编辑(&O)";
             this.保存编辑ToolStripMenuItem.Click += new System.EventHandler(this.保存编辑ToolStripMenuItem_Click);
             // 
@@ -375,23 +374,35 @@
             // miSpatilFilter
             // 
             this.miSpatilFilter.Name = "miSpatilFilter";
-            this.miSpatilFilter.Size = new System.Drawing.Size(224, 26);
+            this.miSpatilFilter.Size = new System.Drawing.Size(186, 26);
             this.miSpatilFilter.Text = "空间查询(&S)";
             this.miSpatilFilter.Click += new System.EventHandler(this.miSpatilFilter_Click);
             // 
             // miBuffer
             // 
             this.miBuffer.Name = "miBuffer";
-            this.miBuffer.Size = new System.Drawing.Size(224, 26);
+            this.miBuffer.Size = new System.Drawing.Size(186, 26);
             this.miBuffer.Text = "缓冲区分析(&B)";
             this.miBuffer.Click += new System.EventHandler(this.miBuffer_Click);
             // 
             // miStatistic
             // 
             this.miStatistic.Name = "miStatistic";
-            this.miStatistic.Size = new System.Drawing.Size(224, 26);
+            this.miStatistic.Size = new System.Drawing.Size(186, 26);
             this.miStatistic.Text = "要素统计(&T)";
             this.miStatistic.Click += new System.EventHandler(this.miStatistic_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(183, 6);
+            // 
+            // stePToolStripMenuItem
+            // 
+            this.stePToolStripMenuItem.Name = "stePToolStripMenuItem";
+            this.stePToolStripMenuItem.Size = new System.Drawing.Size(186, 26);
+            this.stePToolStripMenuItem.Text = "赤平投影图(&P)";
+            this.stePToolStripMenuItem.Click += new System.EventHandler(this.StePToolStripMenuItem_Click);
             // 
             // GeoShow
             // 
@@ -613,21 +624,21 @@
             // mINUETInGToolStripMenuItem
             // 
             this.mINUETInGToolStripMenuItem.Name = "mINUETInGToolStripMenuItem";
-            this.mINUETInGToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mINUETInGToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.mINUETInGToolStripMenuItem.Text = "MINUET in G";
             this.mINUETInGToolStripMenuItem.Click += new System.EventHandler(this.MINUETInGToolStripMenuItem_Click);
             // 
             // tipToolStripMenuItem
             // 
             this.tipToolStripMenuItem.Name = "tipToolStripMenuItem";
-            this.tipToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.tipToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.tipToolStripMenuItem.Text = "Time is a place";
             this.tipToolStripMenuItem.Click += new System.EventHandler(this.tipToolStripMenuItem_Click);
             // 
             // noneToolStripMenuItem
             // 
             this.noneToolStripMenuItem.Name = "noneToolStripMenuItem";
-            this.noneToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.noneToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
             this.noneToolStripMenuItem.Text = "None";
             this.noneToolStripMenuItem.Click += new System.EventHandler(this.NoneToolStripMenuItem_Click);
             // 
@@ -793,18 +804,6 @@
             this.miPageLayout1.Size = new System.Drawing.Size(138, 26);
             this.miPageLayout1.Text = "布局视图";
             this.miPageLayout1.Click += new System.EventHandler(this.布局视图ToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(221, 6);
-            // 
-            // stePToolStripMenuItem
-            // 
-            this.stePToolStripMenuItem.Name = "stePToolStripMenuItem";
-            this.stePToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.stePToolStripMenuItem.Text = "赤平投影图(&P)";
-            this.stePToolStripMenuItem.Click += new System.EventHandler(this.StePToolStripMenuItem_Click);
             // 
             // Form1
             // 
