@@ -1577,7 +1577,11 @@ namespace VioGIS
 
         private void StePToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            string exename = "ste.exe";
+            string debugPath = Application.StartupPath;
+            string pyexePath = debugPath + @"\" + exename;
+            Call c = new Call();
+            c.Callexe(pyexePath);
         }
 
         private void tipToolStripMenuItem_Click(object sender, EventArgs e)
