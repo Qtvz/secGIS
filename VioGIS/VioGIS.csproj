@@ -178,6 +178,7 @@
     <Compile Include="Buffer.Designer.cs">
       <DependentUpon>Buffer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Call.cs" />
     <Compile Include="ClearFeaSele.cs" />
     <Compile Include="DataBoard.cs">
       <SubType>Form</SubType>

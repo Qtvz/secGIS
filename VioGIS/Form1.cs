@@ -22,6 +22,7 @@ using ESRI.ArcGIS.DataSourcesRaster;
 using stdole;
 using ESRI.ArcGIS.SpatialAnalyst;
 using System.Media;
+using Calling;
 
 namespace VioGIS
 {
@@ -1582,6 +1583,11 @@ namespace VioGIS
             mINUETInGToolStripMenuItem.Checked = true;
             sp.SoundLocation = str1 + @"\bgm\MINUET in G.wav";
             sp.PlayLooping();
+        }
+
+        private void StePToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
