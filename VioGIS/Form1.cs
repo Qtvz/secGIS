@@ -59,9 +59,11 @@ namespace VioGIS
             axTOCControl1.SetBuddyControl(axMapControl1);
             axToolbarControl1.SetBuddyControl(axMapControl1);
             axToolbarControl1.AddItem(new GeoMapComm(),-1,-1,false,0,esriCommandStyles.esriCommandStyleIconOnly);
+            /*
             sp.SoundLocation = str1 + @"\bgm\Time is a Place.wav";
             sp.PlayLooping();
             loadMapDoc();
+            */
         }
 
         public void CreatBookmark(string BookMarkname)
